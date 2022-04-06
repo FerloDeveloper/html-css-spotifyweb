@@ -28,7 +28,7 @@ aside {
     width: 230px;
     /* per non far ridurre la colonnina */
     flex-shrink: 0;
-    background-color: #0000;
+    background-color: black;
 }
 
 footer {
