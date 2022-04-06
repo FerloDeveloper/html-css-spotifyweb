@@ -9,26 +9,33 @@
 
 .container-section, aside {
     display: flex;
-    height: calc(100vh - altezza footer);
+    height: calc(100vh - 90px);
 }
 
 .container-section {
-    width: calc(100% - grandezza fissa aside da decidere);
+    background-color: #141922;
+    width: calc(100% - 230px);
     /* scrollbar */
     overflow-y: auto;
 }
 
 aside {
     flex-direction: column;
-    width: larghezza fissa da decidere;
+    width: 230px;
     /* per non far ridurre la colonnina */
     flex-shrink: 0;
+    background-color: #0000;
 }
 
 footer {
     display: flex;
+    background-color: #282828;
     align-content: space-between;
-    height: altezza fissa da decidere;
+    height: 90px;
+}
+
+header {
+    background-color: rgba(black, black, black, alpha);
 }
 
 /* ----- CLASS ----- */
