@@ -19,6 +19,10 @@
     overflow-y: auto;
 }
 
+main {
+    display: flex;
+}
+
 aside {
     flex-direction: column;
     width: 230px;
