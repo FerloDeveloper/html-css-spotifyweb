@@ -19,6 +19,10 @@
     overflow-y: auto;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 main {
     display: flex;
 }
@@ -47,13 +51,48 @@ header {
     z-index: 69;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.grey {
+    color: #a3a3a3;
+}
+
+.white {
+    color: white;
+}
+
+.allign-middle {
+    vertical-align: middle;
+    display: inline-block;
+}
+
 /* ----- CLASS ----- */
 
 /* header */
 
 .logo {
-    width: 160px;
+    width: 180px;
+    margin: 20px 10px;    
 }
+
+.nav-aside {
+    padding: 10px 10px;
+}
+
+.playlist {
+    padding: 15px 10px 5px 10px;
+    display: inline-block;
+}
+
+.fa-solid.fa-square-plus {
+    font-size: 40px;
+}
+
+
+
 
 
 /* aside */

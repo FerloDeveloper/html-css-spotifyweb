@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/style.css">
         <title>Spotify</title>
     </head>
@@ -19,8 +25,41 @@
             <!-- tip: bordo laterale sinistra con effetto hover -->
             <aside>
                 <img class="logo" src="img/logo.svg" alt="">
-                <nav class="nav-aside"></nav>
-                <nav class="playlist"></nav>
+                <nav class="nav-aside">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-house"></i> <strong>Home</strong></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-aside">
+                    <ul>
+                        <li>
+                            <a href=""><i class="grey fa-solid fa-magnifying-glass"></i></i> <strong class="grey">Cerca</strong></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-aside">
+                    <ul>
+                        <li>
+                            <a href=""><i class="grey fa-solid fa-lines-leaning"></i></i> <strong class="grey">La tua libreria</strong></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <strong class="playlist white">PLAYLIST</strong>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-aside">
+                    <ul>
+                        <li>
+                            <a href=""><i class="grey fa-solid fa-square-plus allign-middle"></i></i> <strong class="grey allign-middle">Cerca</strong></a>
+                        </li>
+                    </ul>
+                </nav>
                 <nav class="bottom-aside"></nav>
             </aside>
             <!-- contenitore delle varie sezioni con display flex -->
