@@ -9,6 +9,9 @@
 .container-section {
     display: flex;
     width: calc(100% - grandezza fissa aside da decidere);
+    height: calc(100vh - altezza footer);
+    /* scrollbar */
+    overflow-y: auto;
 
 }
 
@@ -16,6 +19,7 @@ aside {
     display: flex;
     flex-direction: column;
     width: larghezza fissa da decidere;
+    height: calc(100vh - altezza footer);
 }
 
 .playlist {
