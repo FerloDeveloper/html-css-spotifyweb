@@ -29,6 +29,7 @@ aside {
     /* per non far ridurre la colonnina */
     flex-shrink: 0;
     background-color: black;
+    z-index: 420;
 }
 
 footer {
@@ -39,7 +40,11 @@ footer {
 }
 
 header {
-    background-color: rgba(black, black, black, alpha);
+    height: 90px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 69;
 }
 
 /* ----- CLASS ----- */
