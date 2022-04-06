@@ -51,7 +51,9 @@ header {
 
 /* header */
 
-
+.logo {
+    width: 160px;
+}
 
 
 /* aside */
