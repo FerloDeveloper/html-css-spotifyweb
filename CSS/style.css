@@ -1,28 +1,66 @@
-/* RESET */
+/* --- RESET --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* COMMON */
-.container-section {
+/* --- COMMON & CONTAINERS --- */
+
+.container-section, aside {
     display: flex;
-    width: calc(100% - grandezza fissa aside da decidere);
     height: calc(100vh - altezza footer);
+}
+
+.container-section {
+    width: calc(100% - grandezza fissa aside da decidere);
     /* scrollbar */
     overflow-y: auto;
-
 }
 
 aside {
-    display: flex;
     flex-direction: column;
     width: larghezza fissa da decidere;
-    height: calc(100vh - altezza footer);
+    /* per non far ridurre la colonnina */
+    flex-shrink: 0;
 }
+
+footer {
+    display: flex;
+    align-content: space-between;
+    height: altezza fissa da decidere;
+}
+
+/* ----- CLASS ----- */
+
+/* header */
+
+
+
+
+/* aside */
 
 .playlist {
     /* per spingere verso il basso footer-aside */
     flex-grow: 1;
+}
+
+/* footer */
+
+.barretta-player-sfondo {
+    width: da decidere;
+    height: da decidere;
+    background-color: da decidere;
+    border-radius: 5px;
+}
+
+.barretta-player-esecuzione {
+    width: % da decidere;
+    /* prende altezza dal genitore */
+    height: 100%
+}
+
+/* pallino barretta */
+.barretta-player-esecuzione::after {
+    content:
 }
