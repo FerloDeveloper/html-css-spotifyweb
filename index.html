@@ -7,14 +7,36 @@
         <title>Spotify</title>
     </head>
     <body>
+        <!-- effettua l'upgrade + sfondo trasparente (in position fixed col z index) -->
         <header>
 
         </header>
+        <!-- sezioni centrali compresa anche barra laterale sinistra -->
         <main>
+            <!-- barra laterale con display flex per affiancarla al resto -->
+            <!-- tip: 100vh - altezza footer /
+            bordo laterale con effetto hover -->
 
+            <aside>
+                <div class="logo"></div>
+                <nav class="nav-aside" ></nav>
+                <nav class="playlist">
+                    <button class="crea-playlist"></button>
+                </nav>
+                <nav class="bottom-aside"></nav>
+            </aside>
+            <!-- contenitore delle varie sezioni con display flex -->
+            <div class="container-section">
+                <!-- link alti main  -->
+                <nav class="top-main"></nav>
+                <!-- sezioni foto album -->
+                <section class="sezione-1"></section>
+                <section class="sezione-2"></section>
+                <section class="sezione-3"></section>
+            </div>
         </main>
         <footer>
-            
+
         </footer>
     </body>
 </html>

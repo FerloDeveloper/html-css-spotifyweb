@@ -6,3 +6,19 @@
 }
 
 /* COMMON */
+.container-section {
+    display: flex;
+    width: calc(100% - grandezza fissa aside da decidere);
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: larghezza fissa da decidere;
+}
+
+.playlist {
+    /* per spingere verso il basso footer-aside */
+    flex-grow: 1;
+}
