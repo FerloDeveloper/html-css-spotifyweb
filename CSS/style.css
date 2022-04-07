@@ -7,7 +7,7 @@
 
 /* --- COMMON & CONTAINERS --- */
 
-.container-section, aside {
+main, aside {
     display: flex;
     height: calc(100vh - 90px);
 }
@@ -15,16 +15,14 @@
 .container-section {
     background-color: #141922;
     width: calc(100% - 230px);
+    flex-direction: row;
     /* scrollbar */
     overflow-y: auto;
+    padding-top: 100px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-main {
-    display: flex;
 }
 
 aside {
@@ -59,6 +57,7 @@ a {
 
 nav,ul,li {
     display: inline-block ;
+    display: flex;
 }
 
 .grey {
@@ -118,9 +117,16 @@ nav,ul,li {
     cursor: pointer;
 }
 
+.link-alto {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
 /* main */
 .top-main {
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* aside */
@@ -150,3 +156,11 @@ nav,ul,li {
     content:
 }
 
+
+
+/* ELEMENTO AFTER CON POSITION ABSOLUTE PER LA BARRETTINA LINK IN ALTO */
+/* span e display none per far sparire le scritte quando la media queary lo richiede */
+/* overlay album: nel div dell'immagine 
+metto il div overlay con position absolute
+top 0 left 0 width height 100% */
+/* dare hover al div dell'album */
