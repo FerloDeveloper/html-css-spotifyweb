@@ -83,6 +83,7 @@ h2 {
 .px-icon {
     font-size: 20px;
     margin-right: 3px;
+    padding-left: 5px;
 }
 
 /* ----- CLASS ----- */
@@ -183,6 +184,14 @@ h2 {
     height: 1px;
     align-self: center;
     margin: 4px 0px;
+}
+
+.barretta-verde-aside:hover {
+    border-left: 4px solid lightgreen;
+}
+
+strong:hover {
+    color: white;
 }
 
 /* footer */
