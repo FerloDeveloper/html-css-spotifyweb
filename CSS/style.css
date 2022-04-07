@@ -20,6 +20,8 @@ main, aside {
     overflow-y: auto;
     padding-top: 100px;
     flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 body {
@@ -114,7 +116,7 @@ h2 {
 
 .bottone-upgrade {
     padding: 12px 40px;
-    margin-right: 15px;
+    margin-right: 25px;
     border: 1px solid white;
     border-radius: 30px;
     background-color: transparent;
