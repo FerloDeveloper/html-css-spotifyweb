@@ -140,6 +140,7 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .recently-played {
@@ -157,6 +158,7 @@ h2 {
     align-items: center;
     margin: 15px 8px;
     text-align: center;
+    position: relative;
 }
 
 .titolo-album {
@@ -170,6 +172,29 @@ h2 {
 
 .img-rotonda {
     border-radius: 100px;
+}
+
+.link-alto > strong:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    height: 3px;
+    width: 60px; 
+    background-color: lightgreen; 
+} 
+
+.overlay {
+    /* position: absolute;
+    background-color: rgba(00, 00, 00, 0.3);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: none; */
 }
 
 /* aside */
