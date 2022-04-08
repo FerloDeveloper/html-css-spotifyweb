@@ -407,8 +407,9 @@ footer i {
 
 /* responsive  */
 
-@media  and (max-width: 1100px) {
+/* 1100px */
+
+@media screen and (max-width: 1100px) {
     .box-album {
-        width: calc
+        width: calc(100% / 4 - 10px);
     }
-}
