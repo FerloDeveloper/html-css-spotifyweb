@@ -184,17 +184,8 @@ h2 {
     background-color: lightgreen; 
 } 
 
-.overlay {
-    /* position: absolute;
-    background-color: rgba(00, 00, 00, 0.3);
-    display: flex;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    display: none; */
+.img-rotonda:hover, .immagine-album:hover {
+    opacity: 20%;
 }
 
 /* aside */
@@ -226,6 +217,19 @@ i:hover, strong:hover {
 
 /* footer */
 
+.footer-sinistra {
+    display: flex;
+    align-items: center;
+}
+
+.footer-sinistra img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
 .barretta-player-sfondo {
     width: da decidere;
     height: da decidere;
@@ -252,3 +256,125 @@ i:hover, strong:hover {
 metto il div overlay con position absolute
 top 0 left 0 width height 100% */
 /* dare hover al div dell'album */
+
+footer {
+    background-color: #282828;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+.col-sinistra {
+    display: flex;
+    align-items: center;
+}
+
+.col-sinistra img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.col-sinistra h5 {
+    color: #fff;
+}
+
+.col-sinistra-album a {
+    font-size: 13px;
+}
+
+.fa-heart {
+    margin: 0 10px 0 30px;
+}
+
+.col-centrale, .col-destra {
+    color: #fff;
+}
+
+.col-centrale {
+    text-align: center;
+}
+
+.simbols i {
+    margin: 0 15px;
+}
+
+.fa-circle-play {
+    font-size: 25px;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.play-bar {
+    width: 400px;
+    height: 4px;
+    background-color: #5a5a5a;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.play-bar-active, .col-destra-bar-active {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 4px;
+    position: relative;
+}
+
+.play-bar-active {
+    width: 70px;
+}
+
+.col-destra {
+    display: flex;
+    align-items: center;
+}
+
+.col-destra i {
+    margin: 0 10px;
+}
+
+.col-destra-bar {
+    width: 150px;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+
+.col-destra-bar-active {
+    width: 40px;
+}
+
+.play-bar-active:hover, .col-destra-bar-active:hover {
+    background-color: lightgreen;
+}
+
+.play-bar-active:hover::after, .col-destra-bar-active:hover::after {
+    content: "";
+    display: block;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
+
+.col-centrale .fa-circle-play:hover {
+    transform: scale(1.1);
+}
+
+.col:hover .overlay {
+    display: flex;
+}
