@@ -1,255 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <!-- FONTAWESOME -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/style.css">
         <title>Spotify</title>
+        <!-- FOGLIO DI STILE -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <!-- effettua l'upgrade + sfondo trasparente (in position fixed col z index) -->
-        <!-- tip: dando il position fixed devo ridare dimensione all'elemento -->
+        <!-- HEADER -->
         <header>
-            <div class="upgrade">
-                <button class="bottone-upgrade"><strong>EFFETTUA L'UPGRADE</strong></button>
-              </div>
+            <button>EFFETTUA L'UPGRADE</button>
         </header>
-        <!-- sezioni centrali compresa anche barra laterale sinistra -->
+        <!-- MAIN -->
         <main>
-            <!-- barra laterale con display flex per affiancarla al resto -->
-            <!-- tip: bordo laterale sinistra con effetto hover -->
-            <aside>
-                <img class="logo" src="img/logo.svg" alt="">
-                <nav class="nav-aside barretta-verde-aside">
-                    <ul>
-                        <li>
-                            <a href=""><i class="px-icon fa-solid fa-house"></i> <strong>Home</strong></a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="nav-aside barretta-verde-aside bianco-hover">
-                    <ul>
-                        <li class="bianco-hover">
-                            <a href=""><i class="px-icon grey fa-solid fa-magnifying-glass"></i></i> <strong class="grey">Cerca</strong></a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="nav-aside barretta-verde-aside">
-                    <ul>
-                        <li>
-                            <a href=""><i class="px-icon grey fa-solid fa-lines-leaning"></i></i> <strong class="grey">La tua libreria</strong></a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="grow-playlist">
+            <!-- ASIDE -->
+            <section class="aside">
+                <div class="logo">
+                    <img class="logo-grande" src="img/logo.svg" alt="logo Spotify">
+                    <img class="logo-piccolo" src="img/logo-small.svg" alt="logo small Spotify">
+                </div>
+                <div class="aside-nav">
                     <nav>
                         <ul>
-                            <li>
-                                <strong class="playlist white">PLAYLIST</strong>
-                            </li>
+                            <li><a><svg class="aside-nav-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"/></svg> <span>Home</span></a></li>
+                            <li><a><svg class="aside-nav-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill-rule="evenodd"/></svg> <span>Cerca</span></a></li>
+                            <li><a><svg class="aside-nav-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"/></svg> <span>La tua libreria</span></a></li>
                         </ul>
                     </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><i class="grey fa-solid fa-square-plus allign-middle"></i></i> <strong class="grey allign-middle">Cerca</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><strong class="grey">Nome Playlist</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><strong class="grey">Nome Playlist</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><strong class="grey">Nome Playlist</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><strong class="grey">Nome Playlist</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><strong class="grey">Nome Playlist</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><strong class="grey">Nome Playlist</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-aside">
-                        <ul>
-                            <li>
-                                <a href=""><strong class="grey">Nome Playlist</strong></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>    
-                <nav class="bottom-aside nav-aside">
-                    <a class="grey" href=""><i class="fa-solid fa-circle-arrow-down"></i> <strong>Installa app</strong></a>
+                </div>
+                <div class="playlist">
+                    <h4>PLAYLIST</h4>
+                    <a href="#"><i class="fa-solid fa-square-plus"></i>Crea Playlist</a>
+                    <div class="playlist-nav">
+                        <nav>
+                            <ul>
+                                <li><a>Nome Playlist</a></li>
+                                <li><a>Nome Playlist</a></li>
+                                <li><a>Nome Playlist</a></li>
+                                <li><a>Nome Playlist</a></li>
+                                <li><a>Nome Playlist</a></li>
+                                <li><a>Nome Playlist</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="aside-info">
+                    <img src="img/download.svg" alt="download app">
+                    <a href="#">Installa app</a>
+                    <hr>
+                    <img class="profile" src="img/profile.svg" alt="profile user">
+                    <h5 class="profile-name">John Doe</h5>
+                </div>
+            </section>
+            <section class="content">
+                <!-- NAV -->
+                <nav>
+                    <ul>
+                        <li><a>IN EVIDENZA</a></li>
+                        <li><a>PODCAST</a></li>
+                        <li><a>CLASSIFICHE</a></li>
+                        <li><a>GENERI E MOOD</a></li>
+                        <li><a>NUOVE USCITE</a></li>
+                        <li><a>SCOPRI</a></li>
+                    </ul>
                 </nav>
-                <hr class="hr-aside grey">
-                <a class="nav-aside" href=""><i class="px-icon-grande grey fa-solid fa-circle-user allign-middle"></i> <strong class="white allign-middle">John Doe</strong></a>
-            </aside>
-            <!-- contenitore delle varie sezioni con display flex -->
-            <div class="container-section">
-                <!-- link alti main  -->
-                <nav class="top-main">
-                        <ul>
-                            <li>
-                                <a class="link-alto" href=""> <strong class="grey">IN EVIDENZA</strong></a>
-                            </li>
-                            <li>
-                                <a class="link-alto" href=""><strong class="grey">PODCAST</strong></a>
-                            </li>
-                            <li>
-                                <a class="link-alto" href=""> <strong class="grey">CLASSIFICHE</strong></a>
-                            </li>
-                            <li>
-                                <a class="link-alto" href=""><strong class="grey">GENERI E MOOD</strong></a>
-                            </li>
-                            <li>
-                                <a class="link-alto" href=""> <strong class="grey">NUOVE USCITE</strong></a>
-                            </li>
-                            <li>
-                                <a class="link-alto" href=""><strong class="grey">SCOPRI</strong></a>
-                            </li>
-                        </ul>
-                </nav>
-                <!-- sezioni foto album -->
-                <!-- tip: overlay per effetto opaco dentro al div dell'immagine -->
-                <h2 class="recently-played white">Recently played</h2>
-                <section class="sezione-1">
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/metal_lifting.jpg" alt="">
+                <!-- CANZONI -->
+                <section>
+                    <h1>Recently played</h1>
+                    <div class="row">
+                        <!-- 1 ALBUM -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src= "img/metal_lifting.jpg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Heavy Metal</h4>
+                            <small>Subtitle</small>
                         </div>
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/stranger.jpeg" alt="">
+                        <!-- 2 -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src="img/stranger.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Stranger Things, Vol. 1</h4>
+                            <small>Subtitle</small>
                         </div>
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/aquietplace.jpeg" alt="">
+                        <!-- 3 -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src="img/aquietplace.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>A quiet place</h4>
+                            <small>Subtitle</small>
                         </div>
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/split.jpeg" alt="">
+                        <!-- 4 -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src="img/split.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Split</h4>
+                            <small>Subtitle</small>
                         </div>
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/cure.jpeg" alt="">
+                        <!-- 5 -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src="img/cure.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>A cure for wellness</h4>
+                            <small>Subtitle</small>
                         </div>
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/sinister.jpeg" alt="">
+                        <!-- 6 -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src="img/sinister.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Sinister</h4>
+                            <small>Subtitle</small>
                         </div>
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
                     </div>
                 </section>
-                <br>
-                <h2 class="white">Creato per John Doe</h2>
-                <p class="grey">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
-                <section class="sezione-2">
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/radar.jpeg" alt="">
-                        </div>    
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album" src="img/mixdaily.jpeg" alt="">
-                        </div>    
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                </section>
-                <br>
-                <h2 class="white">Artisti piu' popolari</h2>
-                <p class="grey">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
-                <section class="sezione-3">
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album img-rotonda" src="img/youg.jpeg" alt="">
-                        </div>    
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
-                    </div>
-                    <div class="box-album">
-                        <div class="overlay-album">
-                            <img class="immagine-album img-rotonda" src="img/einaudi.jpeg" alt="">
-                        </div>    
-                        <h3 class="titolo-album white">Heavy Metal</h3>
-                        <p class="grey">Subtitle</p>
+                <!-- JOHN DOE  -->
+                <section>
+                    <h1>Creato per John Doe</h1>
+                    <small>Più ascolti, più accurati saranno i suggerimenti.</small>
+                    <div class="row">
+                        <!-- 7 -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src="img/radar.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Release Radar</h4>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="col">
+                            <div class="col-img">
+                                <img src="img/mixdaily.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Daily Mix 1</h4>
+                        </div>
                     </div>
                 </section>
-            </div>
+                <!-- POPULAR -->
+                <section>
+                    <h1>Artisti più popolari</h1>
+                    <small>Più ascolti, più accurati saranno i suggerimenti</small>
+                    <div class="row">
+                        <!-- 9 -->
+                        <div class="col">
+                            <div class="col-img circle">
+                                <img src="img/youg.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Lana del Rey</h4>
+                        </div>
+                        <!-- 10 -->
+                        <div class="col">
+                            <div class="col-img circle">
+                                <img src="img/einaudi.jpeg">
+                                <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4>Ludovico Einaudi</h4>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </main>
-        <!-- footer riguardare zoom -->
         <footer>
-            <!-- pulsantino centrale ha lo scale per animazione tasto -->
             <div class="col-sinistra">
-                <img src="img/sinister.jpeg" alt="sinister album">
+                <img src="img/sinister.jpeg">
                 <div class="col-sinistra-album">
                     <h5>Sinister</h5>
-                    <a class="grey" href="">Brano nome</a>
+                    <a href="#">Brano Nome</a>
                 </div>
-                <i class="grey fa-regular fa-heart"></i>
-                <i class="grey fa-regular fa-folder"></i>
+                <div class="col-sinistra-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
             <div class="col-centrale">
-                <div class="simbols">
+                <div class="col-centrale-icon">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <i class="fa-regular fa-circle-play"></i>
                     <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                    <i class="fa-solid fa-arrow-rotate-destra"></i>
                 </div>
                 <div class="play">
                     <small>0:25</small>
